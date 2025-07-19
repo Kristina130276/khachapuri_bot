@@ -136,3 +136,8 @@ async def finish_order(query, context):
             await context.bot.send_message(chat_id=ADMIN_CHAT_ID, text=summary)
         except Exception as e:
             print("❌ Failed to send order to admin:", e)
+    context.user_data["cart"] = {}
+    context.user_data["phone"] = None
+    context.user_data["address"] = None
+    context.user_data["delivery_time"] = None
+
