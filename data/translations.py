@@ -1,0 +1,53 @@
+translations = {
+    "lang_en": {
+        "welcome": "Welcome! Please choose an item from the menu below 👇",
+        "choose_language": "Please choose your language:",
+        "choose_from_menu": "Please choose from the menu below 👇",
+        "done_order_btn": "✅ Done ordering",
+        "added_to_cart": "✅ {item} x {qty} added to cart.",
+        "cart_empty": "🛒 Your cart is empty.",
+        "order_summary": "🧾 Order Summary:\n{items}\n\n💰 Total: {total}₪",
+        "next_step_phone": "📞 Please share your phone number:",
+        "next_step_address": "🏠 Please enter your delivery address:",
+        "choose_delivery_option": "🚚 Choose a delivery option:",
+        "delivery_asap": "🚀 Deliver ASAP",
+        "delivery_select_time": "⏰ Select delivery time",
+        "choose_time": "⏰ Choose delivery time:",
+        "delivery_confirmed": "✅ Delivery scheduled for: {time}",
+        "order_sent": "🧾 Order sent successfully!"
+    },
+    "lang_ru": {
+        "welcome": "Добро пожаловать! Пожалуйста, выберите товар из меню ниже 👇",
+        "choose_language": "Пожалуйста, выберите язык:",
+        "choose_from_menu": "Пожалуйста, выберите из меню ниже 👇",
+        "done_order_btn": "✅ Завершить заказ",
+        "added_to_cart": "✅ {item} x {qty} добавлено в корзину.",
+        "cart_empty": "🛒 Ваша корзина пуста.",
+        "order_summary": "🧾 Состав заказа:\n{items}\n\n💰 Итого: {total}₪",
+        "next_step_phone": "📞 Пожалуйста, отправьте свой номер телефона:",
+        "next_step_address": "🏠 Пожалуйста, введите адрес доставки:",
+        "choose_delivery_option": "🚚 Выберите способ доставки:",
+        "delivery_asap": "🚀 Как можно скорее",
+        "delivery_select_time": "⏰ Выбрать время доставки",
+        "choose_time": "⏰ Выберите время доставки:",
+        "delivery_confirmed": "✅ Доставка запланирована на: {time}",
+        "order_sent": "🧾 Заказ успешно отправлен!"
+    },
+    "lang_he": {
+        "welcome": "ברוך הבא! בחר מוצר מהתפריט למטה 👇",
+        "choose_language": "אנא בחר שפה:",
+        "choose_from_menu": "אנא בחר מהתפריט למטה 👇",
+        "done_order_btn": "✅ סיום הזמנה",
+        "added_to_cart": "✅ {item} x {qty} נוסף לעגלה.",
+        "cart_empty": "🛒 העגלה שלך ריקה.",
+        "order_summary": "🧾 סיכום ההזמנה:\n{items}\n\n💰 סך הכל: {total}₪",
+        "next_step_phone": "📞 נא שתף את מספר הטלפון שלך:",
+        "next_step_address": "🏠 נא הזן את כתובת המשלוח:",
+        "choose_delivery_option": "🚚 בחר אפשרות משלוח:",
+        "delivery_asap": "🚀 משלוח מיידי",
+        "delivery_select_time": "⏰ בחר זמן משלוח",
+        "choose_time": "⏰ בחר זמן משלוח:",
+        "delivery_confirmed": "✅ משלוח נקבע לשעה: {time}",
+        "order_sent": "🧾 ההזמנה נשלחה בהצלחה!"
+    }
+}
