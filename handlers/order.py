@@ -127,7 +127,7 @@ async def finish_order(query, context):
 
     try:
         await query.edit_message_text(
-            text=translations["order_sent"][lang]
+            text=translations[lang]["order_sent"]
         )
     except telegram.error.BadRequest as e:
         if "Message is not modified" not in str(e):
