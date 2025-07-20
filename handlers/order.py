@@ -125,19 +125,18 @@ async def finish_order(query, context):
     lang = context.user_data.get("lang", "lang_en")
     summary = format_order_summary(context.user_data)
 
-    confirmation = translations.get(lang, translations["lang_en"]).get(
-        "order_sent", "🧾 Order sent successfully!"
-    )
+    try:
+        await query.edit_message_text(
+            text=translations["order_sent"][lang]
+        )
+    except telegram.error.BadRequest as e:
+        if "Message is not modified" not in str(e):
+            raise
 
-    await query.edit_message_text(confirmation)
+    await context.bot.send_message(chat_id=ADMIN_CHAT_ID, text=summary)
 
-    if ADMIN_CHAT_ID:
-        try:
-            await context.bot.send_message(chat_id=ADMIN_CHAT_ID, text=summary)
-        except Exception as e:
-            print("❌ Failed to send order to admin:", e)
-    context.user_data["cart"] = {}
-    context.user_data["phone"] = None
-    context.user_data["address"] = None
-    context.user_data["delivery_time"] = None
+    # Очистка данных
+    lang = context.user_data.get("lang", "lang_en")
+    context.user_data.clear()
+    context.user_data["lang"] = lang
 
