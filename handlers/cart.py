@@ -6,7 +6,7 @@ from handlers.order import ask_phone
 from utils.order_summary import format_order_summary
 import os
 
-ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")
+ADMIN_CHAT_ID = 8340531504
 
 async def add_to_cart(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
