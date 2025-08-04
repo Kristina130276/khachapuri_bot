@@ -12,7 +12,7 @@ from data.translations import translations
 from utils.order_summary import format_order_summary
 import os
 
-ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")
+ADMIN_CHAT_ID = 8340531504
 
 
 async def ask_phone(update: Update, context: ContextTypes.DEFAULT_TYPE):
